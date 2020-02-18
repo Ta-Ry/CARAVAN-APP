@@ -1,8 +1,8 @@
 class BlogsController < ApplicationController
-  def index
-  end
 
   def show
+  	#4-5章始まり
+  	@blog = Blog.find(params[:id])
   end
 
   def index

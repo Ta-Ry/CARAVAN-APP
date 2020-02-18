@@ -30,6 +30,9 @@ class BlogsController < ApplicationController
   	blog.update(blog_params)
   	redirect_to blogs_path(blog)
   end
+  #4-7章の始まり
+  def destroy
+  end
 
   private
 

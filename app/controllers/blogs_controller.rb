@@ -19,7 +19,7 @@ class BlogsController < ApplicationController
   	blog.save
   	redirect_to blogs_path
   end
-
+  #4-4章にて上saveがaveになってたりとスペルミスが目立つので反省
   def edit
   end
 

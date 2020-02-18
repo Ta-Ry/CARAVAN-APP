@@ -7,6 +7,9 @@ class BlogsController < ApplicationController
 
   def new
   end
+  #4-3章の始まり
+  def create
+  end
 
   def edit
   end

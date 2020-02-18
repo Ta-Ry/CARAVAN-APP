@@ -22,6 +22,13 @@ class BlogsController < ApplicationController
   #4-4章にて上saveがaveになってたりとスペルミスが目立つので反省
   #4-6章の始まり
   def edit
+  	@blog = Blog.find(params[:id])
+  end
+
+  def update
+  	blog = Blog.find(params[:id])
+  	blog.update(blog_params)
+  	redirect_to blogs_path(blog)
   end
 
   private
